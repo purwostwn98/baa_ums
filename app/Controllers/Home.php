@@ -6,6 +6,10 @@ class Home extends BaseController
 {
     public function index()
     {
-        return view('home/index');
+        $data = [
+            'menu' => 'beranda',
+            'submenu' => ''
+        ];
+        return view('home/index', $data);
     }
 }

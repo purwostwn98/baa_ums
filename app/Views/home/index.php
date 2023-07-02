@@ -49,13 +49,13 @@
 
 
 <!--====== CATEGORY PART START ======-->
-<section id="category-part">
+<!-- <section id="category-part">
     <div class="container">
         <div class="category pt-40 pb-80">
             <div class="row">
                 <div class="col-lg-4">
                     <div class="category-text pt-40">
-                        <h2>Successful study with us</h2>
+                        <h2>Capai kesuksesan bersama kami</h2>
                     </div>
                 </div>
                 <div class="col-lg-6 offset-lg-1 col-md-8 offset-md-2 col-sm-8 offset-sm-2 col-8 offset-2">
@@ -69,7 +69,7 @@
                                     <span class="cont">
                                         <span>My UMS</span>
                                     </span>
-                                </span> <!-- single category -->
+                                </span> 
                             </a>
                         </div>
                         <div class="col-lg-4">
@@ -81,7 +81,7 @@
                                     <span class="cont">
                                         <span>My Akademik</span>
                                     </span>
-                                </span> <!-- single category -->
+                                </span>
                             </a>
                         </div>
                         <div class="col-lg-4">
@@ -93,7 +93,7 @@
                                     <span class="cont">
                                         <span>Website UMS</span>
                                     </span>
-                                </span> <!-- single category -->
+                                </span> 
                             </a>
                         </div>
                         <div class="col-lg-4">
@@ -105,10 +105,30 @@
                                     <span class="cont">
                                         <span>Literature</span>
                                     </span>
-                                </span> <!-- single category -->
+                                </span> 
                             </a>
                         </div>
-                    </div> <!-- category slide -->
+                    </div>
+                </div>
+            </div> 
+        </div> 
+    </div> 
+</section> -->
+
+<section id="category-part">
+    <div class="container">
+        <div class="category pt-40 pb-80">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="category-text pt-20">
+                        <h4 class="text-center text-white pb-20">Biro Administrasi Akademik</h4>
+                        <h2 class="text-center">Selayang Pandang</h2>
+                        <hr class="selayang">
+                        <p class="selayang_p">Biro Administrasi Akademik (BAA) Universitas Muhammadiyah Surakarta merupakan supporting unit yang berada di bawah koordinasi Wakil Rektor I Bidang Akademik.
+                            BAA selalu berupaya memberikan layanan terbaik pada bagian akademik guna tercapainya Universitas Muhammadiyah yang unggul.
+                        </p> <br>
+                        <p class="text-yellow text-center"><b>Dr. Triyono, M.Si</b><br>Kepala Biro Administrasi Akademik</p>
+                    </div>
                 </div>
             </div> <!-- row -->
         </div> <!-- category -->
@@ -118,15 +138,16 @@
 <!--====== CATEGORY PART ENDS ======-->
 
 <!--====== CATEGORY PART START ======-->
-<div class="container">
-    <div class="row justify-align-center">
-        <div class="col-12 section-title align-center mt-50">
-            <h2>Layanan Kami</h2>
-        </div>
-    </div>
-</div>
+
 
 <section id="category-2-part">
+    <div class="container">
+        <div class="row justify-align-center">
+            <div class="col-12 section-title align-center mt-50">
+                <h2>Layanan Kami</h2>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -135,12 +156,12 @@
                         <div class="col-md-4">
                             <div class="single-items text-center mt-30">
                                 <div class="items-image">
-                                    <img src="images/category/ctg-1.jpg" alt="Category">
+                                    <img src="<?= base_url(); ?>/images/layanan/krs.png" alt="Category">
                                 </div>
                                 <div class="items-cont">
-                                    <a href="#">
-                                        <h5>App Design</h5>
-                                        <span>24 courses</span>
+                                    <a href="/layanan/krs">
+                                        <h5>KRS Online</h5>
+                                        <!-- <span>24 courses</span> -->
                                     </a>
                                 </div>
                             </div> <!-- single items -->
@@ -148,12 +169,11 @@
                         <div class="col-md-4">
                             <div class="single-items text-center mt-30">
                                 <div class="items-image">
-                                    <img src="images/category/ctg-2.jpg" alt="Category">
+                                    <img src="<?= base_url(); ?>/images/layanan/wisuda.png" alt="Category">
                                 </div>
                                 <div class="items-cont">
-                                    <a href="#">
-                                        <h5>App development</h5>
-                                        <span>57 courses </span>
+                                    <a href="/layanan/wisuda">
+                                        <h5>Wisuda</h5>
                                     </a>
                                 </div>
                             </div> <!-- single items -->
@@ -161,12 +181,11 @@
                         <div class="col-md-4">
                             <div class="single-items text-center mt-30">
                                 <div class="items-image">
-                                    <img src="images/category/ctg-3.jpg" alt="Category">
+                                    <img src="<?= base_url(); ?>/images/layanan/aktif.png" alt="Aktif Kuliah UMS">
                                 </div>
                                 <div class="items-cont">
-                                    <a href="#">
-                                        <h5>UI/ UX Design</h5>
-                                        <span>103 courses</span>
+                                    <a href="/layanan/aktif_kuliah">
+                                        <h5>Ket. Aktif Kuliah</h5>
                                     </a>
                                 </div>
                             </div> <!-- single items -->
@@ -174,12 +193,11 @@
                         <div class="col-md-4">
                             <div class="single-items text-center mt-30">
                                 <div class="items-image">
-                                    <img src="images/category/ctg-4.jpg" alt="Category">
+                                    <img src="images/layanan/cuti.png" alt="Category">
                                 </div>
                                 <div class="items-cont">
                                     <a href="#">
-                                        <h5>Photography</h5>
-                                        <span>17 courses </span>
+                                        <h5>Cuti Kuliah</h5>
                                     </a>
                                 </div>
                             </div> <!-- single items -->
@@ -187,12 +205,11 @@
                         <div class="col-md-4">
                             <div class="single-items text-center mt-30">
                                 <div class="items-image">
-                                    <img src="images/category/ctg-5.jpg" alt="Category">
+                                    <img src="images/layanan/pindah.png" alt="Category">
                                 </div>
                                 <div class="items-cont">
                                     <a href="#">
-                                        <h5>Finance</h5>
-                                        <span>103 courses </span>
+                                        <h5>Pindah Program / Universitas</h5>
                                     </a>
                                 </div>
                             </div> <!-- single items -->
@@ -200,12 +217,11 @@
                         <div class="col-md-4">
                             <div class="single-items text-center mt-30">
                                 <div class="items-image">
-                                    <img src="images/category/ctg-6.jpg" alt="Category">
+                                    <img src="images/layanan/legalisir.png" alt="Category">
                                 </div>
                                 <div class="items-cont">
                                     <a href="#">
-                                        <h5>Science</h5>
-                                        <span>17 courses </span>
+                                        <h5>Legalisir Online</h5>
                                     </a>
                                 </div>
                             </div> <!-- single items -->
@@ -213,12 +229,11 @@
                         <div class="col-md-4">
                             <div class="single-items text-center mt-30">
                                 <div class="items-image">
-                                    <img src="images/category/ctg-6.jpg" alt="Category">
+                                    <img src="images/layanan/ktm.png" alt="Category">
                                 </div>
                                 <div class="items-cont">
                                     <a href="#">
-                                        <h5>Science</h5>
-                                        <span>17 courses </span>
+                                        <h5>Penggantian KTM</h5>
                                     </a>
                                 </div>
                             </div> <!-- single items -->
@@ -226,12 +241,11 @@
                         <div class="col-md-4">
                             <div class="single-items text-center mt-30">
                                 <div class="items-image">
-                                    <img src="images/category/ctg-6.jpg" alt="Category">
+                                    <img src="images/layanan/data_diri.png" alt="Category">
                                 </div>
                                 <div class="items-cont">
                                     <a href="#">
-                                        <h5>Science</h5>
-                                        <span>17 courses </span>
+                                        <h5>Perbaikan Data Diri</h5>
                                     </a>
                                 </div>
                             </div> <!-- single items -->
@@ -239,12 +253,11 @@
                         <div class="col-md-4">
                             <div class="single-items text-center mt-30">
                                 <div class="items-image">
-                                    <img src="images/category/ctg-6.jpg" alt="Category">
+                                    <img src="images/layanan/buku.png" alt="Category">
                                 </div>
                                 <div class="items-cont">
                                     <a href="#">
-                                        <h5>Science</h5>
-                                        <span>17 courses </span>
+                                        <h5>Buku Panduan Akademik</h5>
                                     </a>
                                 </div>
                             </div> <!-- single items -->
@@ -260,787 +273,30 @@
 
 <!--====== ABOUT PART START ======-->
 
-<section id="about-part" class="pt-65">
+<div class="kalender_adm" style="background-image: url(images/bg-kalender.svg); background-size: cover;">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-5">
-                <div class="section-title mt-50">
-                    <h5>About us</h5>
-                    <h2>Welcome to Edubin </h2>
-                </div> <!-- section title -->
-                <div class="about-cont">
-                    <p>Lorem ipsum gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet . Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt mauris. <br> <br> auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet . Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt mauris</p>
-                    <a href="#" class="main-btn mt-55">Learn More</a>
-                </div>
-            </div> <!-- about cont -->
-            <div class="col-lg-6 offset-lg-1">
-                <div class="about-event mt-50">
-                    <div class="event-title">
-                        <h3>Upcoming events</h3>
-                    </div> <!-- event title -->
-                    <ul>
-                        <li>
-                            <div class="single-event">
-                                <span><i class="fa fa-calendar"></i> 2 December 2018</span>
-                                <a href="events-single.html">
-                                    <h4>Campus clean workshop</h4>
-                                </a>
-                                <span><i class="fa fa-clock-o"></i> 10:00 Am - 3:00 Pm</span>
-                                <span><i class="fa fa-map-marker"></i> Rc Auditorim</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="single-event">
-                                <span><i class="fa fa-calendar"></i> 2 December 2018</span>
-                                <a href="events-single.html">
-                                    <h4>Tech Summit</h4>
-                                </a>
-                                <span><i class="fa fa-clock-o"></i> 10:00 Am - 3:00 Pm</span>
-                                <span><i class="fa fa-map-marker"></i> Rc Auditorim</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="single-event">
-                                <span><i class="fa fa-calendar"></i> 2 December 2018</span>
-                                <a href="events-single.html">
-                                    <h4>Environment conference</h4>
-                                </a>
-                                <span><i class="fa fa-clock-o"></i> 10:00 Am - 3:00 Pm</span>
-                                <span><i class="fa fa-map-marker"></i> Rc Auditorim</span>
-                            </div>
-                        </li>
-                    </ul>
-                </div> <!-- about event -->
+        <div class="row justify-align-center">
+            <div class="col-12 section-title align-center mt-50">
+                <h2>Kalender Akademik</h2>
             </div>
-        </div> <!-- row -->
-    </div> <!-- container -->
-    <div class="about-bg">
-        <img src="images/about/bg-1.png" alt="About">
+        </div>
     </div>
-</section>
+    <section id="about-part" class="pt-65">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <img src="images/KA_2022_2023.jpg" alt="Kalender Akademik UMS">
+                        <a href="#" class="main-btn mt-20">Download Kalender</a>
+                    </div> <!-- section title -->
+                </div> <!-- about cont -->
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+</div>
 
 <!--====== ABOUT PART ENDS ======-->
 
-<!--====== APPLY PART START ======-->
-
-<section id="apply-aprt" class="pb-120">
-    <div class="container">
-        <div class="apply">
-            <div class="row no-gutters">
-                <div class="col-lg-6">
-                    <div class="apply-cont apply-color-1">
-                        <h3>Apply for fall 2019</h3>
-                        <p>Gravida nibh vel velit auctor aliquetn sollicitudirem sem quibibendum auci elit cons equat ipsutis sem nibh id elituis sed odio sit amet nibh vulputate cursus equat ipsutis.</p>
-                        <a href="#" class="main-btn">Apply Now</a>
-                    </div> <!-- apply cont -->
-                </div>
-                <div class="col-lg-6">
-                    <div class="apply-cont apply-color-2">
-                        <h3>Apply for scholarship</h3>
-                        <p>Gravida nibh vel velit auctor aliquetn sollicitudirem sem quibibendum auci elit cons equat ipsutis sem nibh id elituis sed odio sit amet nibh vulputate cursus equat ipsutis.</p>
-                        <a href="#" class="main-btn">Apply Now</a>
-                    </div> <!-- apply cont -->
-                </div>
-            </div>
-        </div> <!-- row -->
-    </div> <!-- container -->
-</section>
-
-<!--====== APPLY PART ENDS ======-->
-
-<!--====== COURSE PART START ======-->
-
-<section id="course-part" class="pt-115 pb-120 gray-bg">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="section-title pb-45">
-                    <h5>Our course</h5>
-                    <h2>Featured courses </h2>
-                </div> <!-- section title -->
-            </div>
-        </div> <!-- row -->
-        <div class="row course-slide mt-30">
-            <div class="col-lg-4">
-                <div class="single-course">
-                    <div class="thum">
-                        <div class="image">
-                            <img src="images/course/cu-1.jpg" alt="Course">
-                        </div>
-                        <div class="price">
-                            <span>Free</span>
-                        </div>
-                    </div>
-                    <div class="cont">
-                        <ul>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                        </ul>
-                        <span>(20 Reviews)</span>
-                        <a href="courses-single.html">
-                            <h4>Learn basic javascript from start for beginner</h4>
-                        </a>
-                        <div class="course-teacher">
-                            <div class="thum">
-                                <a href="#"><img src="images/course/teacher/t-1.jpg" alt="teacher"></a>
-                            </div>
-                            <div class="name">
-                                <a href="#">
-                                    <h6>Mark anthem</h6>
-                                </a>
-                            </div>
-                            <div class="admin">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-user"></i><span>31</span></a></li>
-                                    <li><a href="#"><i class="fa fa-heart"></i><span>10</span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- single course -->
-            </div>
-            <div class="col-lg-4">
-                <div class="single-course">
-                    <div class="thum">
-                        <div class="image">
-                            <img src="images/course/cu-2.jpg" alt="Course">
-                        </div>
-                        <div class="price">
-                            <span>Free</span>
-                        </div>
-                    </div>
-                    <div class="cont">
-                        <ul>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                        </ul>
-                        <span>(20 Reviews)</span>
-                        <a href="courses-single.html">
-                            <h4>Learn basic javascript from start for beginner</h4>
-                        </a>
-                        <div class="course-teacher">
-                            <div class="thum">
-                                <a href="#"><img src="images/course/teacher/t-2.jpg" alt="teacher"></a>
-                            </div>
-                            <div class="name">
-                                <a href="#">
-                                    <h6>Mark anthem</h6>
-                                </a>
-                            </div>
-                            <div class="admin">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-user"></i><span>31</span></a></li>
-                                    <li><a href="#"><i class="fa fa-heart"></i><span>10</span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- single course -->
-            </div>
-            <div class="col-lg-4">
-                <div class="single-course">
-                    <div class="thum">
-                        <div class="image">
-                            <img src="images/course/cu-3.jpg" alt="Course">
-                        </div>
-                        <div class="price">
-                            <span>Free</span>
-                        </div>
-                    </div>
-                    <div class="cont">
-                        <ul>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                        </ul>
-                        <span>(20 Reviews)</span>
-                        <a href="courses-single.html">
-                            <h4>Learn basic javascript from start for beginner</h4>
-                        </a>
-                        <div class="course-teacher">
-                            <div class="thum">
-                                <a href="#"><img src="images/course/teacher/t-3.jpg" alt="teacher"></a>
-                            </div>
-                            <div class="name">
-                                <a href="#">
-                                    <h6>Mark anthem</h6>
-                                </a>
-                            </div>
-                            <div class="admin">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-user"></i><span>31</span></a></li>
-                                    <li><a href="#"><i class="fa fa-heart"></i><span>10</span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- single course -->
-            </div>
-            <div class="col-lg-4">
-                <div class="single-course">
-                    <div class="thum">
-                        <div class="image">
-                            <img src="images/course/cu-4.jpg" alt="Course">
-                        </div>
-                        <div class="price">
-                            <span>Free</span>
-                        </div>
-                    </div>
-                    <div class="cont">
-                        <ul>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                        </ul>
-                        <span>(20 Reviews)</span>
-                        <a href="courses-single.html">
-                            <h4>Learn basic javascript from start for beginner</h4>
-                        </a>
-                        <div class="course-teacher">
-                            <div class="thum">
-                                <a href="#"><img src="images/course/teacher/t-4.jpg" alt="teacher"></a>
-                            </div>
-                            <div class="name">
-                                <a href="#">
-                                    <h6>Mark anthem</h6>
-                                </a>
-                            </div>
-                            <div class="admin">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-user"></i><span>31</span></a></li>
-                                    <li><a href="#"><i class="fa fa-heart"></i><span>10</span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- single course -->
-            </div>
-            <div class="col-lg-4">
-                <div class="single-course">
-                    <div class="thum">
-                        <div class="image">
-                            <img src="images/course/cu-5.jpg" alt="Course">
-                        </div>
-                        <div class="price">
-                            <span>Free</span>
-                        </div>
-                    </div>
-                    <div class="cont">
-                        <ul>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                            <li><i class="fa fa-star"></i></li>
-                        </ul>
-                        <span>(20 Reviews)</span>
-                        <a href="courses-single.html">
-                            <h4>Learn basic javascript from start for beginner</h4>
-                        </a>
-                        <div class="course-teacher">
-                            <div class="thum">
-                                <a href="#"><img src="images/course/teacher/t-5.jpg" alt="teacher"></a>
-                            </div>
-                            <div class="name">
-                                <a href="#">
-                                    <h6>Mark anthem</h6>
-                                </a>
-                            </div>
-                            <div class="admin">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-user"></i><span>31</span></a></li>
-                                    <li><a href="#"><i class="fa fa-heart"></i><span>10</span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- single course -->
-            </div>
-        </div> <!-- course slide -->
-    </div> <!-- container -->
-</section>
-
-<!--====== COURSE PART ENDS ======-->
-
-<!--====== VIDEO FEATURE PART START ======-->
-
-<section id="video-feature" class="bg_cover pt-60 pb-110" style="background-image: url(images/bg-1.jpg)">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6 order-last order-lg-first">
-                <div class="video text-lg-left text-center pt-50">
-                    <a class="Video-popup" href="https://www.youtube.com/watch?v=bRRtdzJH1oE"><i class="fa fa-play"></i></a>
-                </div> <!-- row -->
-            </div>
-            <div class="col-lg-5 offset-lg-1 order-first order-lg-last">
-                <div class="feature pt-50">
-                    <div class="feature-title">
-                        <h3>Our Facilities</h3>
-                    </div>
-                    <ul>
-                        <li>
-                            <div class="single-feature">
-                                <div class="icon">
-                                    <img src="images/all-icon/f-1.png" alt="icon">
-                                </div>
-                                <div class="cont">
-                                    <h4>Global Certificate</h4>
-                                    <p>Gravida nibh vel velit auctor aliquetn auci elit cons solliazcitudirem sem quibibendum sem nibhutis.</p>
-                                </div>
-                            </div> <!-- single feature -->
-                        </li>
-                        <li>
-                            <div class="single-feature">
-                                <div class="icon">
-                                    <img src="images/all-icon/f-2.png" alt="icon">
-                                </div>
-                                <div class="cont">
-                                    <h4>Alumni Support</h4>
-                                    <p>Gravida nibh vel velit auctor aliquetn auci elit cons solliazcitudirem sem quibibendum sem nibhutis.</p>
-                                </div>
-                            </div> <!-- single feature -->
-                        </li>
-                        <li>
-                            <div class="single-feature">
-                                <div class="icon">
-                                    <img src="images/all-icon/f-3.png" alt="icon">
-                                </div>
-                                <div class="cont">
-                                    <h4>Books & Library</h4>
-                                    <p>Gravida nibh vel velit auctor aliquetn auci elit cons solliazcitudirem sem quibibendum sem nibhutis.</p>
-                                </div>
-                            </div> <!-- single feature -->
-                        </li>
-                    </ul>
-                </div> <!-- feature -->
-            </div>
-        </div> <!-- row -->
-    </div> <!-- container -->
-    <div class="feature-bg"></div> <!-- feature bg -->
-</section>
-
-<!--====== VIDEO FEATURE PART ENDS ======-->
-
-<!--====== TEACHERS PART START ======-->
-
-<section id="teachers-part" class="pt-70 pb-120">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-5">
-                <div class="section-title mt-50">
-                    <h5>Featured Teachers</h5>
-                    <h2>Meet Our teachers</h2>
-                </div> <!-- section title -->
-                <div class="teachers-cont">
-                    <p>Lorem ipsum gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet . Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt mauris. <br> <br> auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet . Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt mauris</p>
-                    <a href="#" class="main-btn mt-55">Career with us</a>
-                </div> <!-- teachers cont -->
-            </div>
-            <div class="col-lg-6 offset-lg-1">
-                <div class="teachers mt-20">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="single-teachers mt-30 text-center">
-                                <div class="image">
-                                    <img src="images/teachers/t-1.jpg" alt="Teachers">
-                                </div>
-                                <div class="cont">
-                                    <a href="teachers-single.html">
-                                        <h6>Mark Alen</h6>
-                                    </a>
-                                    <span>Vice Chancellor</span>
-                                </div>
-                            </div> <!-- single teachers -->
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="single-teachers mt-30 text-center">
-                                <div class="image">
-                                    <img src="images/teachers/t-2.jpg" alt="Teachers">
-                                </div>
-                                <div class="cont">
-                                    <a href="teachers-single.html">
-                                        <h6>David card</h6>
-                                    </a>
-                                    <span>Pro Chancellor</span>
-                                </div>
-                            </div> <!-- single teachers -->
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="single-teachers mt-30 text-center">
-                                <div class="image">
-                                    <img src="images/teachers/t-3.jpg" alt="Teachers">
-                                </div>
-                                <div class="cont">
-                                    <a href="teachers-single.html">
-                                        <h6>Rebeka Alig</h6>
-                                    </a>
-                                    <span>Pro Chancellor</span>
-                                </div>
-                            </div> <!-- single teachers -->
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="single-teachers mt-30 text-center">
-                                <div class="image">
-                                    <img src="images/teachers/t-4.jpg" alt="Teachers">
-                                </div>
-                                <div class="cont">
-                                    <a href="teachers-single.html">
-                                        <h6>Hanna Bein</h6>
-                                    </a>
-                                    <span>Aerobics head</span>
-                                </div>
-                            </div> <!-- single teachers -->
-                        </div>
-                    </div> <!-- row -->
-                </div> <!-- teachers -->
-            </div>
-        </div> <!-- row -->
-    </div> <!-- container -->
-</section>
-
-<!--====== TEACHERS PART ENDS ======-->
-
-<!--====== PUBLICATION PART START ======-->
-
-<section id="publication-part" class="pt-115 pb-120 gray-bg">
-    <div class="container">
-        <div class="row align-items-end">
-            <div class="col-lg-6 col-md-8 col-sm-7">
-                <div class="section-title pb-60">
-                    <h5>Publications</h5>
-                    <h2>From Store </h2>
-                </div> <!-- section title -->
-            </div>
-            <div class="col-lg-6 col-md-4 col-sm-5">
-                <div class="products-btn text-right pb-60">
-                    <a href="#" class="main-btn">All Products</a>
-                </div> <!-- products btn -->
-            </div>
-        </div> <!-- row -->
-        <div class="row justify-content-center">
-            <div class="col-lg-3 col-md-6 col-sm-8">
-                <div class="single-publication mt-30 text-center">
-                    <div class="image">
-                        <img src="images/publication/p-1.jpg" alt="Publication">
-                        <div class="add-cart">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                                <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="content pt-10">
-                        <h5 class="book-title"><a href="#">Stones The Road </a></h5>
-                        <p class="writer-name"><span>By</span> Scott Trench</p>
-                        <div class="price-btn d-flex align-items-center justify-content-between">
-                            <div class="price pt-20">
-                                <span class="discount-price">$250</span>
-                                <span class="normal-price">$200</span>
-                            </div>
-                            <div class="button pt-10">
-                                <a href="#" class="main-btn"><i class="fa fa-cart-plus"></i> Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- single publication -->
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-8">
-                <div class="single-publication mt-30 text-center">
-                    <div class="image">
-                        <img src="images/publication/p-2.jpg" alt="Publication">
-                        <div class="add-cart">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                                <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="content pt-10">
-                        <h5 class="book-title"><a href="#">The Stranded </a></h5>
-                        <p class="writer-name"><span>By</span> Scott Trench</p>
-                        <div class="price-btn d-flex align-items-center justify-content-between">
-                            <div class="price pt-20">
-                                <span class="discount-price">$250</span>
-                                <span class="normal-price">$200</span>
-                            </div>
-                            <div class="button pt-10">
-                                <a href="#" class="main-btn"><i class="fa fa-cart-plus"></i> Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- single publication -->
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-8">
-                <div class="single-publication mt-30 text-center">
-                    <div class="image">
-                        <img src="images/publication/p-3.jpg" alt="Publication">
-                        <div class="add-cart">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                                <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="content pt-10">
-                        <h5 class="book-title"><a href="#">The Sicario </a></h5>
-                        <p class="writer-name"><span>By</span> Scott Trench</p>
-                        <div class="price-btn d-flex align-items-center justify-content-between">
-                            <div class="price pt-20">
-                                <span class="discount-price">$250</span>
-                                <span class="normal-price">$200</span>
-                            </div>
-                            <div class="button pt-10">
-                                <a href="#" class="main-btn"><i class="fa fa-cart-plus"></i> Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- single publication -->
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-8">
-                <div class="single-publication mt-30 text-center">
-                    <div class="image">
-                        <img src="images/publication/p-4.jpg" alt="Publication">
-                        <div class="add-cart">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                                <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="content pt-10">
-                        <h5 class="book-title"><a href="#">There Were None </a></h5>
-                        <p class="writer-name"><span>By</span> Scott Trench</p>
-                        <div class="price-btn d-flex align-items-center justify-content-between">
-                            <div class="price pt-20">
-                                <span class="discount-price">$250</span>
-                                <span class="normal-price">$200</span>
-                            </div>
-                            <div class="button pt-10">
-                                <a href="#" class="main-btn"><i class="fa fa-cart-plus"></i> Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- single publication -->
-            </div>
-        </div> <!-- row -->
-    </div> <!-- container -->
-</section>
-
-<!--====== PUBLICATION PART ENDS ======-->
-
-<!--====== TEASTIMONIAL PART START ======-->
-
-<section id="testimonial" class="bg_cover pt-115 pb-115" data-overlay="8" style="background-image: url(images/bg-2.jpg)">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="section-title pb-40">
-                    <h5>Testimonial</h5>
-                    <h2>What they say</h2>
-                </div> <!-- section title -->
-            </div>
-        </div> <!-- row -->
-        <div class="row testimonial-slide mt-40">
-            <div class="col-lg-6">
-                <div class="single-testimonial">
-                    <div class="testimonial-thum">
-                        <img src="images/testimonial/t-1.jpg" alt="Testimonial">
-                        <div class="quote">
-                            <i class="fa fa-quote-right"></i>
-                        </div>
-                    </div>
-                    <div class="testimonial-cont">
-                        <p>Aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet sem nibh id elit sollicitudirem </p>
-                        <h6>Rubina Helen</h6>
-                        <span>Bsc, Engineering</span>
-                    </div>
-                </div> <!-- single testimonial -->
-            </div>
-            <div class="col-lg-6">
-                <div class="single-testimonial">
-                    <div class="testimonial-thum">
-                        <img src="images/testimonial/t-2.jpg" alt="Testimonial">
-                        <div class="quote">
-                            <i class="fa fa-quote-right"></i>
-                        </div>
-                    </div>
-                    <div class="testimonial-cont">
-                        <p>Aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet sem nibh id elit sollicitudirem </p>
-                        <h6>Rubina Helen</h6>
-                        <span>Bsc, Engineering</span>
-                    </div>
-                </div> <!-- single testimonial -->
-            </div>
-            <div class="col-lg-6">
-                <div class="single-testimonial">
-                    <div class="testimonial-thum">
-                        <img src="images/testimonial/t-3.jpg" alt="Testimonial">
-                        <div class="quote">
-                            <i class="fa fa-quote-right"></i>
-                        </div>
-                    </div>
-                    <div class="testimonial-cont">
-                        <p>Aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet sem nibh id elit sollicitudirem </p>
-                        <h6>Rubina Helen</h6>
-                        <span>Bsc, Engineering</span>
-                    </div>
-                </div> <!-- single testimonial -->
-            </div>
-        </div> <!-- testimonial slide -->
-    </div> <!-- container -->
-</section>
-
-<!--====== TEASTIMONIAL PART ENDS ======-->
-
-<!--====== NEWS PART START ======-->
-
-<section id="news-part" class="pt-115 pb-110">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="section-title pb-50">
-                    <h5>Latest News</h5>
-                    <h2>From the news</h2>
-                </div> <!-- section title -->
-            </div>
-        </div> <!-- row -->
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="single-news mt-30">
-                    <div class="news-thum pb-25">
-                        <img src="images/news/n-1.jpg" alt="News">
-                    </div>
-                    <div class="news-cont">
-                        <ul>
-                            <li><a href="#"><i class="fa fa-calendar"></i>2 December 2018 </a></li>
-                            <li><a href="#"> <span>By</span> Adam linn</a></li>
-                        </ul>
-                        <a href="blog-single.html">
-                            <h3>Tips to grade high cgpa in university life</h3>
-                        </a>
-                        <p>Lorem ipsum gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt .</p>
-                    </div>
-                </div> <!-- single news -->
-            </div>
-            <div class="col-lg-6">
-                <div class="single-news news-list">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="news-thum mt-30">
-                                <img src="images/news/ns-1.jpg" alt="News">
-                            </div>
-                        </div>
-                        <div class="col-sm-8">
-                            <div class="news-cont mt-30">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-calendar"></i>2 December 2018 </a></li>
-                                    <li><a href="#"> <span>By</span> Adam linn</a></li>
-                                </ul>
-                                <a href="blog-single.html">
-                                    <h3>Intellectual communication</h3>
-                                </a>
-                                <p>Gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit cons vel.</p>
-                            </div>
-                        </div>
-                    </div> <!-- row -->
-                </div> <!-- single news -->
-                <div class="single-news news-list">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="news-thum mt-30">
-                                <img src="images/news/ns-2.jpg" alt="News">
-                            </div>
-                        </div>
-                        <div class="col-sm-8">
-                            <div class="news-cont mt-30">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-calendar"></i>2 December 2018 </a></li>
-                                    <li><a href="#"> <span>By</span> Adam linn</a></li>
-                                </ul>
-                                <a href="blog-single.html">
-                                    <h3>Study makes you perfect</h3>
-                                </a>
-                                <p>Gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit cons vel.</p>
-                            </div>
-                        </div>
-                    </div> <!-- row -->
-                </div> <!-- single news -->
-                <div class="single-news news-list">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="news-thum mt-30">
-                                <img src="images/news/ns-3.jpg" alt="News">
-                            </div>
-                        </div>
-                        <div class="col-sm-8">
-                            <div class="news-cont mt-30">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-calendar"></i>2 December 2018 </a></li>
-                                    <li><a href="#"> <span>By</span> Adam Linn</a></li>
-                                </ul>
-                                <a href="blog-single.html">
-                                    <h3>Technology eduction is now....</h3>
-                                </a>
-                                <p>Gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit cons vel.</p>
-                            </div>
-                        </div>
-                    </div> <!-- row -->
-                </div> <!-- single news -->
-            </div>
-        </div> <!-- row -->
-    </div> <!-- container -->
-</section>
-
-<!--====== NEWS PART ENDS ======-->
-
-<!--====== PATNAR LOGO PART START ======-->
-
-<div id="patnar-logo" class="pt-40 pb-80 gray-bg">
-    <div class="container">
-        <div class="row patnar-slide">
-            <div class="col-lg-12">
-                <div class="single-patnar text-center mt-40">
-                    <img src="images/patnar-logo/p-1.png" alt="Logo">
-                </div>
-            </div>
-            <div class="col-lg-12">
-                <div class="single-patnar text-center mt-40">
-                    <img src="images/patnar-logo/p-2.png" alt="Logo">
-                </div>
-            </div>
-            <div class="col-lg-12">
-                <div class="single-patnar text-center mt-40">
-                    <img src="images/patnar-logo/p-3.png" alt="Logo">
-                </div>
-            </div>
-            <div class="col-lg-12">
-                <div class="single-patnar text-center mt-40">
-                    <img src="images/patnar-logo/p-4.png" alt="Logo">
-                </div>
-            </div>
-            <div class="col-lg-12">
-                <div class="single-patnar text-center mt-40">
-                    <img src="images/patnar-logo/p-2.png" alt="Logo">
-                </div>
-            </div>
-            <div class="col-lg-12">
-                <div class="single-patnar text-center mt-40">
-                    <img src="images/patnar-logo/p-3.png" alt="Logo">
-                </div>
-            </div>
-        </div> <!-- row -->
-    </div> <!-- container -->
-</div>
 
 <?= $this->endSection(); ?>
 <!--====== PATNAR LOGO PART ENDS ======-->

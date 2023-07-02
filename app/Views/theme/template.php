@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="<?= base_url(); ?>/css/bootstrap.min.css">
 
     <!--====== Fontawesome css ======-->
-    <link rel="stylesheet" href="<?= base_url(); ?>/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="<?= base_url(); ?>/css/font-awesome.min.css"> -->
 
     <!--====== Default css ======-->
     <link rel="stylesheet" href="<?= base_url(); ?>/css/default.css">
@@ -44,6 +44,8 @@
 
     <!--====== Responsive css ======-->
     <link rel="stylesheet" href="<?= base_url(); ?>/css/responsive.css">
+
+    <script src="https://use.fontawesome.com/d241ccdcfe.js"></script>
 
 
 </head>
@@ -76,27 +78,16 @@
                     <div class="col-md-6">
                         <div class="header-contact">
                             <ul>
-                                <li><i class="fa fa-envelope"></i><a href="#">info@yourmail.com</a></li>
-                                <li><i class="fa fa-phone"></i><span>+0123-456-5678</span></li>
+                                <li><i class="fa fa-envelope"></i><a href="#">baa@ums.ac.id</a></li>
+                                <li><i class="fa fa-phone"></i><span>+6271 717417 ext 1139</span></li>
                             </ul>
                         </div> <!-- header contact -->
                     </div>
                     <div class="col-md-6">
                         <div class="header-right d-flex justify-content-end">
-                            <div class="social d-flex">
-                                <span class="follow-us">Follow Us :</span>
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </div> <!-- social -->
                             <div class="login-register">
                                 <ul>
-                                    <li><a href="register.html">Login</a></li>
-                                    <li><a href="register.html">Register</a></li>
+                                    <li><a target="_blank" href="https://myakademik.ums.ac.id">MyAkademik</a></li>
                                 </ul>
                             </div>
                         </div> <!-- header right -->
@@ -110,8 +101,8 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <nav class="navbar navbar-expand-lg">
-                            <a class="navbar-brand" href="index-4.html">
-                                <img src="images/logo.png" alt="Logo">
+                            <a class="navbar-brand" href="<?= base_url(); ?>">
+                                <img src="<?= base_url(); ?>/images/logo_baa.png" alt="Logo">
                             </a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="icon-bar"></span>
@@ -120,77 +111,44 @@
                             </button>
 
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
-                                <ul class="navbar-nav ml-auto">
+                                <ul class="navbar-nav ml-auto myDIV">
                                     <li class="nav-item">
-                                        <a class="active" href="index.html">Home</a>
+                                        <a class="<?= $menu == 'beranda' ? 'active' : ''; ?>" href="<?= base_url(); ?>">Beranda</a>
+
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="<?= $menu == 'layanan' ? 'active' : ''; ?>" href="/layanan">Layanan Akademik</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="<?= $menu == 'profil' ? 'active' : ''; ?>" href="#">Profil</a>
                                         <ul class="sub-menu">
-                                            <li><a class="active" href="index.html">Home 01</a></li>
-                                            <li><a href="index-2.html">Home 02</a></li>
-                                            <li><a href="index-3.html">Home 03</a></li>
-                                            <li><a href="index-4.html">Home 04</a></li>
+                                            <li><a class="<?= $submenu == 'tentang-kami' ? 'active' : ''; ?>" href="#">Tentang Kami</a></li>
+                                            <li><a href="gallery.html">Struktur Orgranisasi</a></li>
+                                            <li><a href="policy.html">Program Studi</a></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#">Pages</a>
+                                        <a class="<?= $menu == 'dokumen' ? 'active' : ''; ?>" href="#">Dokumen Akademik</a>
                                         <ul class="sub-menu">
-                                            <li><a href="about.html">About Us</a></li>
-                                            <li><a href="gallery.html">Gallery</a></li>
-                                            <li><a href="policy.html">Privacy Policy</a></li>
-                                            <li><a href="faq.html">FAQ</a></li>
+                                            <li><a class="<?= $submenu == 'buku-akademik' ? 'active' : ''; ?>" href="/dokumen/buku-akademik">Buku Akademik</a></li>
+                                            <li><a class="<?= $submenu == 'kalender-akademik' ? 'active' : ''; ?>" href="/dokumen/kalender-akademik">Kalender Akademik</a></li>
+                                            <li><a class="<?= $submenu == 'sk-akademik' ? 'active' : ''; ?>" href="/dokumen/sk-akademik">SK Akademik</a></li>
+                                            <li><a class="<?= $submenu == 'jadwal-ujian' ? 'active' : ''; ?>" href="teachers-single.html">Jadwal Ujian</a></li>
+                                            <li><a class="<?= $submenu == 'jurnal-kuliah' ? 'active' : ''; ?>" href="teachers-single.html">Jurnal Kuliah</a></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="courses.html">Courses</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="courses.html">Courses</a></li>
-                                            <li><a href="courses-single.html">Course Single</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="events.html">Events</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="events.html">Events List 1</a></li>
-                                            <li><a href="events-2.html">Events List 2</a></li>
-                                            <li><a href="events-single.html">Event Single</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="teachers.html">Teachers</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="teachers.html">teachers</a></li>
-                                            <li><a href="teachers-2.html">teachers 2</a></li>
-                                            <li><a href="teachers-single.html">teacher Single</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="blog.html">Blog</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="blog-single.html">Blog Single</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="shop.html">Shop</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="shop.html">Shop</a></li>
-                                            <li><a href="shop-single.html">Shop Single</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="contact.html">Contact</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="contact.html">Contact Us</a></li>
-                                            <li><a href="contact-2.html">Contact Us 2</a></li>
-                                        </ul>
+                                        <a href="contact.html">Kontak</a>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="right-icon text-right">
+                            <!-- <div class="right-icon text-right">
                                 <ul>
                                     <li><a href="javascript:void(0)" id="search"><i class="fa fa-search"></i></a></li>
                                     <li><a href="#"><i class="fa fa-shopping-bag"></i><span>0</span></a></li>
                                 </ul>
-                            </div> <!-- right icon -->
+                            </div>  -->
+                            <!-- right icon -->
                         </nav> <!-- nav -->
                     </div>
                 </div> <!-- row -->
@@ -208,62 +166,13 @@
     <!--====== FOOTER PART START ======-->
 
     <footer id="footer-part">
-        <div class="footer-top pt-40 pb-70">
+        <div class="footer-top pb-70">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="footer-about mt-40">
-                            <div class="logo">
-                                <a href="#"><img src="images/logo-2.png" alt="Logo"></a>
-                            </div>
-                            <p>Gravida nibh vel velit auctor aliquetn quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate.</p>
-                            <ul class="mt-20">
-                                <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            </ul>
-                        </div> <!-- footer about -->
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="footer-link mt-40">
-                            <div class="footer-title pb-25">
-                                <h6>Sitemap</h6>
-                            </div>
-                            <ul>
-                                <li><a href="index.html"><i class="fa fa-angle-right"></i>Home</a></li>
-                                <li><a href="about.html"><i class="fa fa-angle-right"></i>About us</a></li>
-                                <li><a href="courses.html"><i class="fa fa-angle-right"></i>Courses</a></li>
-                                <li><a href="blog.html"><i class="fa fa-angle-right"></i>News</a></li>
-                                <li><a href="events.html"><i class="fa fa-angle-right"></i>Event</a></li>
-                            </ul>
-                            <ul>
-                                <li><a href="#"><i class="fa fa-angle-right"></i>Gallery</a></li>
-                                <li><a href="shop.html"><i class="fa fa-angle-right"></i>Shop</a></li>
-                                <li><a href="teachers.html"><i class="fa fa-angle-right"></i>Teachers</a></li>
-                                <li><a href="#"><i class="fa fa-angle-right"></i>Support</a></li>
-                                <li><a href="contact.html"><i class="fa fa-angle-right"></i>Contact</a></li>
-                            </ul>
-                        </div> <!-- footer link -->
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-sm-6">
-                        <div class="footer-link support mt-40">
-                            <div class="footer-title pb-25">
-                                <h6>Support</h6>
-                            </div>
-                            <ul>
-                                <li><a href="#"><i class="fa fa-angle-right"></i>FAQS</a></li>
-                                <li><a href="#"><i class="fa fa-angle-right"></i>Privacy</a></li>
-                                <li><a href="#"><i class="fa fa-angle-right"></i>Policy</a></li>
-                                <li><a href="#"><i class="fa fa-angle-right"></i>Support</a></li>
-                                <li><a href="#"><i class="fa fa-angle-right"></i>Documentation</a></li>
-                            </ul>
-                        </div> <!-- support -->
-                    </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-12 col-md-12">
                         <div class="footer-address mt-40">
                             <div class="footer-title pb-25">
-                                <h6>Contact Us</h6>
+                                <h6>Alamat Kantor</h6>
                             </div>
                             <ul>
                                 <li>
@@ -271,7 +180,15 @@
                                         <i class="fa fa-home"></i>
                                     </div>
                                     <div class="cont">
-                                        <p>143 castle road 517 district, kiyev port south Canada</p>
+                                        <p>Gedung Induk Siti Waildah - Lantai 2</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <i class="fa fa-address-book"></i>
+                                    </div>
+                                    <div class="cont">
+                                        <p>Jl. A. Yani No.159, Pabelan, Kartasura, Sukoharjo 57169, Jawa Tengah, Indonesia</p>
                                     </div>
                                 </li>
                                 <li>
@@ -279,7 +196,7 @@
                                         <i class="fa fa-phone"></i>
                                     </div>
                                     <div class="cont">
-                                        <p>+3 123 456 789</p>
+                                        <p>+6271 717417 ext 1139</p>
                                     </div>
                                 </li>
                                 <li>
@@ -287,7 +204,7 @@
                                         <i class="fa fa-envelope-o"></i>
                                     </div>
                                     <div class="cont">
-                                        <p>info@yourmail.com</p>
+                                        <p>baa@ums.ac.id</p>
                                     </div>
                                 </li>
                             </ul>
@@ -300,16 +217,16 @@
         <div class="footer-copyright pt-10 pb-25">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8">
-                        <div class="copyright text-md-left text-center pt-15">
-                            <p>&copy; Copyrights 2020 Edubin All rights reserved. </p>
+                    <div class="col-md-12">
+                        <div class="copyright text-md-center text-center pt-15">
+                            <p>&copy; Copyrights 2023 Biro Administrasi Akademik UMS. </p>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <!-- <div class="col-md-4">
                         <div class="copyright text-md-right text-center pt-15">
                             <p>Designed by <span>Pixelcurve</span> </p>
                         </div>
-                    </div>
+                    </div> -->
                 </div> <!-- row -->
             </div> <!-- container -->
         </div> <!-- footer copyright -->
@@ -325,14 +242,10 @@
 
 
 
-
-
-
-
-
     <!--====== jquery js ======-->
     <script src="<?= base_url(); ?>/js/vendor/modernizr-3.6.0.min.js"></script>
-    <script src="<?= base_url(); ?>/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- <script src="<?= base_url(); ?>/js/vendor/jquery-1.12.4.min.js"></script> -->
 
     <!--====== Bootstrap js ======-->
     <script src="<?= base_url(); ?>/js/bootstrap.min.js"></script>
@@ -369,6 +282,28 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC3Ip9iVC0nIxC6V14CKLQ1HZNF_65qEQ"></script>
     <script src="<?= base_url(); ?>/js/map-script.js"></script>
 
+    <script>
+        // Get the container element
+        var btnContainer = document.getElementById("myDIV");
+
+        // Get all buttons with class="btn" inside the container
+        var btns = btnContainer.getElementsByClassName("btn");
+
+        // Loop through the buttons and add the active class to the current/clicked button
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+
+                // If there's no active class
+                if (current.length > 0) {
+                    current[0].className = current[0].className.replace(" active", "");
+                }
+
+                // Add the active class to the current/clicked button
+                this.className += " active";
+            });
+        }
+    </script>
 </body>
 
 </html>
