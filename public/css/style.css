@@ -58,6 +58,7 @@ body {
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    counter-reset: listCounter;
 }
 img {
     max-width: 100%;
@@ -104,6 +105,7 @@ ul, ol {
 
 .ollist ol{
     list-style-type: decimal;
+    padding-left: 20px;
 }
 p {
     font-size: 16px;
@@ -112,6 +114,20 @@ p {
     color: #505050;
     margin: 0px;
 }
+
+.continuous-list li {
+    list-style: none;
+    padding: 0;
+    list-style-position: outside;
+    
+}
+
+.continuous-list li::before {
+    content: counter(listCounter) " . ";  
+    counter-increment: listCounter;
+    
+}
+
 .bg_cover {
     background-position: center center;
     background-size: cover;
@@ -213,6 +229,24 @@ p {
     text-align: center;
 }
 .section-title h2::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background-color: #ffc600;
+    bottom: 0;
+    left: auto;
+}
+
+.section-title h3 {
+    font-size: 25px;
+    color: #2F3185;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    text-align: left;
+}
+.section-title h3::before {
     content: '';
     position: absolute;
     width: 50px;
@@ -1113,7 +1147,7 @@ p {
 .slider-cont-3 {
     position: relative;
     z-index: 5;
-    background-color: rgba(7, 41, 77, 0.8);
+    background-color: rgba(7, 41, 77, 0.0);
     padding: 70px 100px 80px;
 }
 .slider-cont-3 h2 {

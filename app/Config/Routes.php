@@ -30,14 +30,24 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
+$routes->get('/kontak', 'Home::kontak');
 $routes->get('/layanan', 'Layanan::layanan');
 $routes->get('/layanan/krs', 'Layanan::krs');
 $routes->get('/layanan/wisuda', 'Layanan::wisuda');
 $routes->get('/layanan/aktif_kuliah', 'Layanan::aktif_kuliah');
+$routes->get('/layanan/cuti_kuliah', 'Layanan::cuti_kuliah');
+$routes->get('/layanan/pindah', 'Layanan::pindah');
+$routes->get('/layanan/ganti', 'Layanan::ganti');
+$routes->get('/layanan/perbaikan', 'Layanan::perbaikan_data');
 
 $routes->get('/dokumen/buku-akademik', 'Dokumen::buku_akademik');
 $routes->get('/dokumen/kalender-akademik', 'Dokumen::kalender_akademik');
 $routes->get('/dokumen/sk-akademik', 'Dokumen::sk_akademik');
+$routes->get('/dokumen/jadwal-ujian', 'Dokumen::jadwal_ujian');
+
+$routes->get('/profil/tentang_kami', 'Profil::tentang_kami');
+$routes->get('/profil/struktur_organisasi', 'Profil::struktur_organisasi');
+$routes->get('/profil/program_studi', 'Profil::program_studi');
 
 /*
  * --------------------------------------------------------------------

@@ -196,7 +196,7 @@
                                     <img src="images/layanan/cuti.png" alt="Category">
                                 </div>
                                 <div class="items-cont">
-                                    <a href="#">
+                                    <a href="/layanan/cuti_kuliah">
                                         <h5>Cuti Kuliah</h5>
                                     </a>
                                 </div>
@@ -208,7 +208,7 @@
                                     <img src="images/layanan/pindah.png" alt="Category">
                                 </div>
                                 <div class="items-cont">
-                                    <a href="#">
+                                    <a href="layanan/pindah">
                                         <h5>Pindah Program / Universitas</h5>
                                     </a>
                                 </div>
@@ -232,7 +232,7 @@
                                     <img src="images/layanan/ktm.png" alt="Category">
                                 </div>
                                 <div class="items-cont">
-                                    <a href="#">
+                                    <a href="/layanan/ganti">
                                         <h5>Penggantian KTM</h5>
                                     </a>
                                 </div>
@@ -244,7 +244,7 @@
                                     <img src="images/layanan/data_diri.png" alt="Category">
                                 </div>
                                 <div class="items-cont">
-                                    <a href="#">
+                                    <a href="/layanan/perbaikan">
                                         <h5>Perbaikan Data Diri</h5>
                                     </a>
                                 </div>

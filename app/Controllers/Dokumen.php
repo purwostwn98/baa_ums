@@ -30,4 +30,13 @@ class Dokumen extends BaseController
         ];
         return view('dokumen/sk-akademik', $data);
     }
+
+    public function jadwal_ujian()
+    {
+        $data = [
+            'menu' => 'dokumen',
+            'submenu' => 'jadwal-ujian'
+        ];
+        return view('dokumen/jadwal-ujian', $data);
+    }
 }

@@ -10,6 +10,22 @@ class Profil extends BaseController
             'menu' => 'profil',
             'submenu' => 'tentang-kami'
         ];
-        return view('profil/tentang-kami', $data);
+        return view('/profil/tentang_kami', $data);
+    }
+    public function struktur_organisasi()
+    {
+        $data = [
+            'menu' => 'profil',
+            'submenu' => 'struktur_organisasi'
+        ];
+        return view('/profil/struktur_organisasi', $data);
+    }
+    public function program_studi()
+    {
+        $data = [
+            'menu' => 'profil',
+            'submenu' => 'program_studi'
+        ];
+        return view('/profil/program_studi', $data);
     }
 }

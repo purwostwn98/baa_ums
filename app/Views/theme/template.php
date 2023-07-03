@@ -123,8 +123,8 @@
                                         <a class="<?= $menu == 'profil' ? 'active' : ''; ?>" href="#">Profil</a>
                                         <ul class="sub-menu">
                                             <li><a class="<?= $submenu == 'tentang-kami' ? 'active' : ''; ?>" href="#">Tentang Kami</a></li>
-                                            <li><a href="gallery.html">Struktur Orgranisasi</a></li>
-                                            <li><a href="policy.html">Program Studi</a></li>
+                                            <li><a class="<?= $submenu == 'struktur_organisasi' ? 'active' : ''; ?>" href="/profil/struktur_organisasi">Struktur Orgranisasi</a></li>
+                                            <li><a class="<?= $submenu == 'program_studi' ? 'active' : ''; ?>" href="/profil/program_studi">Program Studi</a></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item">
@@ -133,12 +133,12 @@
                                             <li><a class="<?= $submenu == 'buku-akademik' ? 'active' : ''; ?>" href="/dokumen/buku-akademik">Buku Akademik</a></li>
                                             <li><a class="<?= $submenu == 'kalender-akademik' ? 'active' : ''; ?>" href="/dokumen/kalender-akademik">Kalender Akademik</a></li>
                                             <li><a class="<?= $submenu == 'sk-akademik' ? 'active' : ''; ?>" href="/dokumen/sk-akademik">SK Akademik</a></li>
-                                            <li><a class="<?= $submenu == 'jadwal-ujian' ? 'active' : ''; ?>" href="teachers-single.html">Jadwal Ujian</a></li>
-                                            <li><a class="<?= $submenu == 'jurnal-kuliah' ? 'active' : ''; ?>" href="teachers-single.html">Jurnal Kuliah</a></li>
+                                            <li><a class="<?= $submenu == 'jadwal-ujian' ? 'active' : ''; ?>" href="/dokumen/jadwal-ujian">Jadwal Ujian</a></li>
+                                            <li><a class="<?= $submenu == 'jurnal-kuliah' ? 'active' : ''; ?>" href="https://baa.ums.ac.id/akademik/data_kaldik/Jurnal-Kuliah.pdf">Jurnal Kuliah</a></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="contact.html">Kontak</a>
+                                        <a class="<?= $menu == 'kontak' ? 'active' : ''; ?>" href="/kontak">Kontak</a>
                                     </li>
                                 </ul>
                             </div>
@@ -180,7 +180,7 @@
                                         <i class="fa fa-home"></i>
                                     </div>
                                     <div class="cont">
-                                        <p>Gedung Induk Siti Waildah - Lantai 2</p>
+                                        <p>Gedung Induk Siti Walidah - Lantai 2</p>
                                     </div>
                                 </li>
                                 <li>
@@ -188,7 +188,7 @@
                                         <i class="fa fa-address-book"></i>
                                     </div>
                                     <div class="cont">
-                                        <p>Jl. A. Yani No.159, Pabelan, Kartasura, Sukoharjo 57169, Jawa Tengah, Indonesia</p>
+                                        <p>Jl. A. Yani Tromol Pos I Kartasura, Pabelan, Kartasura, Sukoharjo 57169, Jawa Tengah, Indonesia</p>
                                     </div>
                                 </li>
                                 <li>

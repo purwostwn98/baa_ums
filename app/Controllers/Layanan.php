@@ -43,6 +43,31 @@ class Layanan extends BaseController
             'menu' => 'layanan',
             'submenu' => ''
         ];
-        return view('layanan/aktif_kuliah', $data);
+        return view('layanan/cuti_kuliah', $data);
+    }
+    public function pindah()
+    {
+        $data = [
+            'menu' => 'layanan',
+            'submenu' => ''
+        ];
+        return view('layanan/pindah', $data);
+    }
+    public function ganti()
+    {
+        $data = [
+            'menu' => 'layanan',
+            'submenu' => ''
+        ];
+        return view('layanan/penggantian_ktm', $data);
+    }
+
+    public function perbaikan_data()
+    {
+        $data = [
+            'menu' => 'layanan',
+            'submenu' => ''
+        ];
+        return view('layanan/perbaikan_data', $data);
     }
 }

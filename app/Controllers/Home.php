@@ -12,4 +12,13 @@ class Home extends BaseController
         ];
         return view('home/index', $data);
     }
+
+    public function kontak()
+    {
+        $data = [
+            'menu' => 'kontak',
+            'submenu' => ''
+        ];
+        return view('home/kontak', $data);
+    }
 }
